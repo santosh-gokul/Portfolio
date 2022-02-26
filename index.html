@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" class="noscrollbar">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>@santoshgokul 🤠</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+        <link href="css/style.css" rel="stylesheet">
+
+        <script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			     crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <!-- Font Awesome JS -->
+        <script src="https://kit.fontawesome.com/92ab13fe6a.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="noscrollbar">
+        
+        <div id="progressBar"></div>
+
+        <div class="container page d-flex" id="intro_cont">
+        
+            <div class="justify-content-center align-self-center">
+                <div id='welcome'>
+                    Ahoy 👋 I'm
+                </div>
+                
+                <div id='name'>
+                    Santosh
+                    Gokul
+                </div>
+                <div id='subtitle'>
+                    <span id='subsubtitle'>Swiggy 
+                        <a href="https://www.swiggy.com/"><img class="manImg" src="res/swiggy.svg"></img></a>
+                    </span>
+                </div>
+
+                <div id="social_media_set">
+                    <div class="col-sm icon">
+                        <a href="https://www.linkedin.com/in/santosh-gokul/"  style="color:#0077b7">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm icon">
+                        <a href="https://github.com/santosh-gokul">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm icon">
+                        <a href="https://stackoverflow.com/users/7349415/santosh-gokul" style="color:#ec7c22">
+                            <i class="fab fa-stack-overflow"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm icon">
+                        <a href="https://t.me/santo_monto" style="color:#28a7ea">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm icon">
+                        <a href="mailto:n.santoshgokul@gmail.com" style="color:#e34133">
+                            <i class="fas fa-envelope-open"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="container page" >
+
+            <div class="page_title"  style='height:15%'>
+                I am..
+            </div>
+            <div class="row noscrollbar" style='max-height:75%; overflow: scroll'>
+                <div class="col-md-12 col-xl-10">
+                    <p class='page_list_content'>
+                        From Bangalore, India 🇮🇳
+                        <span class='sep'> ⭐ </span> Multilingual - Tamil and English being my fav ❤️
+                        <span class='sep'> ⭐ </span> A Pythonista 🐍
+                        <span class='sep'> ⭐ </span> A Dog Parent 🐕
+                        <span class='sep'> ⭐ </span> A Cheese Enthusiast 🧀
+                        <span class='sep'> ⭐ </span> A Passionate Gardener 🌱
+                        <span class='sep'> ⭐ </span> Always ready for a cup of Milkshake 🥤
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container page" >
+
+            <div class="row page_title"  style='height:15%'>
+                I could be the person you're looking for..
+            </div>
+            <div class="row noscrollbar" style='height:85%; overflow: scroll'>
+                <div class="col-md-12 col-xl-10">
+                    <p class='page_list_content'>
+                        To just talk about stuff that we have in common 🤔
+                        <span class='sep'> ⭐ </span> or to avail my services
+                        as a freelancer 👨‍💻
+                        <span class='sep'> ⭐ </span> <a href='#top' class="link-secondary">
+                            In any case click here to find out how to contact me
+                            <svg width="24px" height="24px" viewBox="0 0 24 24"><g id="external_link" class="icon_svg-stroke" stroke="#666" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 13.5 17 19.5 5 19.5 5 7.5 11 7.5"></polyline><path d="M14,4.5 L20,4.5 L20,10.5 M20,4.5 L11,13.5"></path></g></svg> </a>
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+    <script>
+
+     let pages = $('.page');
+
+     func = () => {
+         const progressBar = document.querySelector("#progressBar");
+         let totalPageHeight = document.body.scrollHeight - window.innerHeight;
+         let yoff = 0;
+         for (let i=pages.length-1; i>=1; i--){
+             if (window.pageYOffset >= $(pages[i]).position().top - ($(pages[i]).position().top - $(pages[i-1]).position().top)/2){
+                 yoff = $(pages[i]).position().top;
+                 break;
+             }
+         }
+         let newProgressHeight = (yoff / totalPageHeight) * 100;
+         progressBar.style.height = `${newProgressHeight}%`;
+         //progressBar.style.opacity = `${newProgressHeight}%`;
+     };
+
+     $(window).resize(function(){
+         console.log("Resizing");
+         //scroller.scrollBy(0,0);
+         $(".page").css('height', window.innerHeight);
+         $(".page").css('max-height', window.innerHeight);
+         $(".page").css('min-height',window.innerHeight);
+         func();
+     });
+     $(window).on('orientationchange', function(){
+         console.log("Resizing");
+
+         $(".page").css('height', window.innerHeight);
+         $(".page").css('max-height', window.innerHeight);
+         $(".page").css('min-height',window.innerHeight);
+         func();
+     });
+
+     setInterval(() => {
+         func();
+     }, 100);
+
+     $("a[href='#top']").click(function() {
+         $("html, body").animate({ scrollTop: 0 }, "slow");
+         return false;
+     });
+
+    </script>
+</html>

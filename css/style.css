@@ -1,0 +1,142 @@
+/*SCROLL ANIMATION*/
+html{
+   /* scroll-snap-type: mandatory; */
+   /* scroll-snap-points-y: repeat(300px); */
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  
+}
+body{
+  background-color: #000000/*#00b89a*/ /*#15eba3;*/;
+  /* scroll-snap-type: mandatory; */
+  /* scroll-snap-points-y: repeat(300px); */
+  /* scroll-snap-type: y mandatory; */
+  /* scroll-behavior: smooth; */
+}
+
+
+.page{
+  height: 100vh;
+  max-width: 100%;
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+.page_list_content{
+  padding-left: 10vmin;
+  padding-right: 10vmin;
+  padding-bottom: 2vh;
+  margin-top: 10vh;
+  font-family: 'Gilroy', sans-serif;
+  font-size:calc(18px + 1.0vw);
+  /* font-size: calc((1vh/1vw)vmin); */
+  line-height: 200%;
+  font-weight: 500;
+  color:  #f1e0e0;
+}
+
+ /* Hide scrollbar for Chrome, Safari and Opera */
+.noscrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.noscrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.page_title{
+  margin-left: 10vmin;
+  padding-left: 0;
+  padding-right: 10vmin;
+  padding-top: 6vh;
+  padding-bottom: 10vh;
+  font-family: 'Gilroy', sans-serif;
+  font-size: calc(20px + 2vw);
+  line-height: 100%;
+  font-weight: 600;
+
+  color:  #ffffff;
+}
+
+.sep{
+  font-size:calc(1px + 1vw);
+  display: inline;
+  width: auto;
+  margin: 2vmin;
+}
+
+.page_list_content a{
+  text-decoration: none;
+  color: #f5f3f3;
+}
+
+#name{
+  margin-left: 10vmin;
+  padding-right: 10vmin;
+  padding-bottom: 2vmin;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 10vmin;
+  line-height: 100%;
+  font-weight: 500;
+  color:  #ffffff;
+}
+
+#welcome{
+  margin-left: 10vmin;
+  padding-right: 10vmin;
+  padding-bottom: 2vmin;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 5vmin;
+  line-height: 150%;
+  font-weight: 300;
+  color:  #ffffff;
+}
+
+#subtitle{
+  margin-left: 10vmin;
+  padding-right: 9vmin;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 4vmin;
+  line-height: 120%;
+  font-weight: 500;
+  color:  #fcab86;
+}
+
+#subsubtitle{
+  font-size: 3vmin;
+}
+
+#social_media_set{
+  justify-content:flex-start;
+  flex-direction: row;
+  display: flex;
+  margin-left: 10vmin;
+  margin-top: 2.5vmin;
+}
+.icon{
+  padding-left: 0;
+  flex: 0 1 8vmin;
+}
+
+.icon a{
+  color: #444444;
+  font-size: 4.75vmin;
+}
+
+.icon a:hover{
+  color: #00b89a;
+  font-size: 4.75vmin;
+}
+
+#progressBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(10px, 7vw);
+  background: linear-gradient(to top, #000000, #000000);
+  height: 0;
+  opacity: 50%;
+
+}
