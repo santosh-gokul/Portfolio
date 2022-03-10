@@ -7,6 +7,7 @@ html{
   scroll-behavior: smooth;
   
 }
+
 body{
   background-color: #000000/*#00b89a*/ /*#15eba3;*/;
   /* scroll-snap-type: mandatory; */
@@ -206,4 +207,22 @@ body{
 
 * {
   box-sizing: border-box;
+}
+
+.space-y-5>:not([hidden])~:not([hidden]) {
+  --tw-space-y-reverse:0!important;
+  margin-bottom:calc(1.25rem*var(--tw-space-y-reverse))!important;
+  margin-top:calc(1.25rem*(1 - var(--tw-space-y-reverse)))!important
+ }
+
+ 
+
+ @media only screen and (max-width: 768px) {
+  .lg\:columns-3 {
+    column-count: 1 !important;
+  }
+  
+  .sm\:columns-2 {
+    column-count: 1 !important;
+  }
 }
