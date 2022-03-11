@@ -215,7 +215,13 @@ body{
   margin-top:calc(1.25rem*(1 - var(--tw-space-y-reverse)))!important
  }
 
- 
+.testimonySize {
+  max-width: 80%;
+  padding-left: 10vmin;
+  padding-right: 10vmin;
+  padding-bottom: 2vh;
+  padding-top: 10vh;
+} 
 
  @media only screen and (max-width: 768px) {
   .lg\:columns-3 {
@@ -225,4 +231,15 @@ body{
   .sm\:columns-2 {
     column-count: 1 !important;
   }
+
+
+.testimonySize {
+  max-width: 100%;
+  padding-left: 10vmin;
+  padding-right: 10vmin;
+  padding-bottom: 2vh;
+  padding-top: 10vh;
+} 
+
+
 }
