@@ -167,7 +167,7 @@ body{
 }
 
 .sm\:columns-2 {
-  column-count: 2 !important;
+  column-count: 3 !important;
 }
 
 .text-sm {
@@ -241,5 +241,8 @@ body{
   padding-top: 10vh;
 } 
 
-
+.break-inside-avoid-column {
+  -moz-column-break-inside: avoid !important;
+  break-inside: avoid-column !important;
+}
 }
