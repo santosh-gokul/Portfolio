@@ -116,6 +116,11 @@ body{
   margin-left: 10vmin;
   margin-top: 2.5vmin;
 }
+
+#social_media_set1{
+  display: inline-flex;
+  flex-wrap: wrap;
+}
 .icon{
   padding-left: 0;
   flex: 0 1 8vmin;
@@ -124,6 +129,11 @@ body{
 .icon a{
   color: #444444;
   font-size: 4.75vmin;
+}
+
+.icon1 a{
+  color: #444444;
+  font-size: 2.75vmin;
 }
 
 .icon a:hover{
@@ -180,8 +190,6 @@ body{
   font-size: .75rem !important;
   line-height: 1rem !important;
   color:  #ffffff;
-
-
 }
 .navbar-reading_progress::-moz-progress-bar {
   background-color: #91e595;
@@ -230,6 +238,11 @@ body{
   
   .sm\:columns-2 {
     column-count: 1 !important;
+  }
+
+  .icon1 a{
+    color: #444444;
+    font-size: 3.75vmin;
   }
 
 
