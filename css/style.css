@@ -177,7 +177,7 @@ body{
 }
 
 .sm\:columns-2 {
-  column-count: 3 !important;
+  column-count: 2 !important;
 }
 
 .text-sm {
