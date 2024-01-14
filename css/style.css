@@ -259,3 +259,10 @@ body{
   break-inside: avoid-column !important;
 }
 }
+.vertical {
+            border-left: 6px solid white;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+}
